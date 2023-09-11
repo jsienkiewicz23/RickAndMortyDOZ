@@ -7,5 +7,6 @@ import reactor.core.publisher.Flux;
 public interface CharacterService {
 
     Character getCharacterByName(String name);
+
     Flux<CharacterDTO> importCharacters();
 }

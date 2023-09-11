@@ -37,7 +37,6 @@ public class CharacterServiceImpl implements CharacterService {
         return webClient.get()
                 .uri(url)
                 .retrieve()
-                .bodyToFlux(CharacterDTO.class)
-                .doOnError(throwable -> log.error("Failed for some reason", throwable));
+                .bodyToFlux(CharacterDTO.class);
     }
 }

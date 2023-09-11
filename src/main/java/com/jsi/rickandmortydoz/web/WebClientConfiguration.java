@@ -24,7 +24,6 @@ public class WebClientConfiguration {
         return WebClient
                 .builder()
                 .baseUrl(url)
-                .defaultCookie("cookieKey", "cookieValue")
                 .exchangeStrategies(strategies)
                 .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
                 .build();
